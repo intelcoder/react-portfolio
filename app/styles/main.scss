@@ -1,0 +1,16 @@
+
+
+@import "../components/App/style";
+@import "../components/CountContainer/style";
+@import "../components/ImageSlider/style";
+@import "./normalize";
+@import "./vars";
+@import "./global";
+@import "./mixin";
+
+#test {
+  background-color: green;
+}
+.seongjunscss{
+  background-color: red;
+}

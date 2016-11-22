@@ -1,0 +1,33 @@
+@import "../../styles/mixin";
+
+#image-slider {
+  @include flex(column, center,center);
+  .image-container{
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    > img {
+      position: absolute;
+      width:100%;
+      height:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: scale(1)
+    }
+  }
+  .slider-btn-container {
+    width:100%;
+    position: relative;
+    .btn {
+      font-size:2vw;
+      &:nth-child(1){
+        float: left;
+      }
+      &:nth-child(2){
+        float: right;
+      }
+    }
+  }
+
+}
