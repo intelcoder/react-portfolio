@@ -10,7 +10,7 @@ export default class DemoPage extends React.Component {
     const {width, height} = this.props;
     return (
       <div>
-        <ImageSlider width={width} height={height/2}>
+        <ImageSlider width={width} height={height/2} interval={0.5}>
           {
             images.wallpapers.map((wallpaper, index)=> {
               return <img key={index} src={wallpaper}/>
