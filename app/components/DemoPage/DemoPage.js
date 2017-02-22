@@ -4,6 +4,9 @@
 import React from 'react';
 import ImageSlider from '../ImageSlider';
 import images from '../../models/images';
+import LineButton from '../LineButton';
+
+
 
 export default class DemoPage extends React.Component {
   render() {
@@ -17,6 +20,7 @@ export default class DemoPage extends React.Component {
             })
           }
         </ImageSlider>
+        <LineButton buttonText="TEST"/>
       </div>
     )
   }

@@ -1,0 +1,29 @@
+#line-button-container{
+
+  display: flex;
+  flex-direction: column;
+
+  width:200px;
+  height:100px;
+  .btn-body {
+    @include flex(column, center, center);
+    flex:0.9;
+    font-size:1.5rem;
+    background: deepskyblue;
+  }
+
+  .text {
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+  .btn-line-container{
+    flex:0.1;
+    overflow: hidden;
+    .btn-bottom-line {
+      height:100%;
+      background: black;
+
+    }
+  }
+
+}
